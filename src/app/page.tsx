@@ -8,6 +8,7 @@ import FieldEngineerControls from "@/components/FieldEngineerControls";
 import AkgecPedigreeBanner from "@/components/AkgecPedigreeBanner";
 import ProblemAndMarketMatrix from "@/components/ProblemAndMarketMatrix";
 import PrototypeValidationSuite from "@/components/PrototypeValidationSuite";
+import LiveInteractiveWastePipeline from "@/components/LiveInteractiveWastePipeline";
 
 type HardwareProfile = "society" | "family";
 
@@ -87,6 +88,13 @@ export default function EcoBinLandingPage() {
 
           {/* Navigation Links */}
           <nav className="hidden lg:flex items-center space-x-5 text-sm font-medium">
+            <a
+              href="#live-pipeline"
+              className="text-primary hover:text-primary-container font-bold transition-colors py-1 flex items-center gap-1"
+            >
+              <span className="material-symbols-outlined text-[16px]">play_circle</span>
+              <span>Live Ingestion Demo</span>
+            </a>
             <a
               href="#problem"
               className="text-on-surface-variant hover:text-on-surface transition-colors py-1 flex items-center gap-1"
@@ -207,6 +215,13 @@ export default function EcoBinLandingPage() {
               </p>
             </div>
             <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-2.5 justify-end pt-2">
+              <a
+                href="#live-pipeline"
+                className="w-full py-3 px-5 rounded bg-primary text-white font-bold text-xs hover:bg-primary-container transition-all flex items-center justify-center gap-2 shadow-sm active:scale-[0.99] cursor-pointer ring-2 ring-primary/30"
+              >
+                <span className="material-symbols-outlined text-[18px]">play_circle</span>
+                Live Waste Ingestion &amp; Storage Simulator
+              </a>
               <button
                 onClick={() => setIsModalOpen(true)}
                 className="w-full py-3 px-5 rounded bg-primary-container text-on-primary font-semibold text-xs hover:bg-primary transition-all flex items-center justify-center gap-2 shadow-xs active:scale-[0.99] cursor-pointer"
@@ -285,6 +300,29 @@ export default function EcoBinLandingPage() {
               </span>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* ================= SECTION: LIVE INTERACTIVE INGESTION & STORAGE PIPELINE ================= */}
+      <section className="py-20 bg-surface border-b border-outline-variant" id="live-pipeline">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-primary-fixed/30 border border-primary/20 text-xs font-mono text-primary font-bold tracking-widest uppercase mb-3">
+              <span className="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+              END-TO-END DEMO: FEED &rarr; SEGREGATE &rarr; DIGEST &rarr; STORE
+            </div>
+            <h2 className="text-3xl lg:text-4xl font-extrabold text-on-surface tracking-tight mb-3">
+              Live Ingestion &amp; Energy Storage Pipeline
+            </h2>
+            <p className="text-sm text-on-surface-variant leading-relaxed">
+              Drop mixed canteen plates, accidental metal cutlery, or greasy plastic containers into the single chute.
+              Watch our ESP32-S3 AI vision and high-speed servo gate divert contaminants in &lt;150ms, macerate organics, and
+              store pressurized cooking biogas and bio-fertilizer directly on-site.
+            </p>
+          </div>
+
+          {/* Live Interactive Waste Ingestion & Storage Component */}
+          <LiveInteractiveWastePipeline />
         </div>
       </section>
 
