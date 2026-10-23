@@ -29,6 +29,7 @@ export default function EcoBinLandingPage() {
   const [activeProfile, setActiveProfile] = useState<HardwareProfile>("society");
   const [systemTime, setSystemTime] = useState<string>("10:00:00 IST");
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
   const [toastMessage, setToastMessage] = useState<string | null>(null);
 
   // Quick Toast Trigger
@@ -58,135 +59,198 @@ export default function EcoBinLandingPage() {
     <div className="min-h-screen bg-background text-on-surface">
       {/* ================= TOP NAVIGATION BAR ================= */}
       <header className="sticky top-0 z-40 bg-surface-container-lowest/95 backdrop-blur-md border-b border-outline-variant shadow-xs transition-all">
-        <div className="flex justify-between items-center w-full px-6 lg:px-10 h-16 max-w-7xl mx-auto">
+        <div className="flex justify-between items-center w-full px-4 sm:px-6 lg:px-8 h-16 max-w-7xl mx-auto gap-3">
           {/* Brand Logo & Mesh Telemetry Chip */}
-          <div className="flex items-center gap-5">
-            <a href="#" className="flex items-center gap-2 group">
-              <div className="w-8 h-8 rounded bg-primary-container text-on-primary flex items-center justify-center font-mono text-sm tracking-tighter shadow-xs">
+          <div className="flex items-center gap-3 shrink-0">
+            <a href="#" className="flex items-center gap-2 group shrink-0">
+              <div className="w-8 h-8 rounded bg-primary-container text-on-primary flex items-center justify-center font-mono text-sm tracking-tighter shadow-xs shrink-0">
                 <span className="material-symbols-outlined text-[20px]">
                   energy_program_saving
                 </span>
               </div>
-              <span className="tracking-tight text-on-surface text-xl font-bold">
+              <span className="tracking-tight text-on-surface text-xl font-bold whitespace-nowrap">
                 EcoBin
-                <span className="text-primary font-mono text-xs ml-1.5 px-1.5 py-0.5 rounded bg-surface-container border border-outline-variant uppercase">
+                <span className="text-primary font-mono text-xs ml-1 px-1.5 py-0.5 rounded bg-surface-container border border-outline-variant uppercase">
                   OS
                 </span>
               </span>
             </a>
 
             {/* Live Node Telemetry Indicator */}
-            <div className="hidden xl:flex items-center gap-2 px-3 py-1 rounded bg-surface-container-low border border-outline-variant text-[10px] font-mono text-on-surface-variant">
-              <span className="relative flex h-2 w-2">
+            <div className="hidden 2xl:flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-low border border-outline-variant text-[10px] font-mono text-on-surface-variant whitespace-nowrap shrink-0">
+              <span className="relative flex h-2 w-2 shrink-0">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
               </span>
-              <span className="tracking-widest font-semibold uppercase">
-                STATUS: MESH CONNECTED · 42 NODES ONLINE [18ms]
+              <span className="font-semibold uppercase tracking-wider">
+                42 NODES ONLINE [18ms]
               </span>
             </div>
           </div>
 
-          {/* Navigation Links */}
-          <nav className="hidden lg:flex items-center space-x-5 text-sm font-medium">
+          {/* Navigation Links - Single line, elegant, whitespace-nowrap */}
+          <nav className="hidden lg:flex items-center space-x-2 xl:space-x-3 text-xs font-semibold whitespace-nowrap shrink-0">
             <a
               href="#live-pipeline"
-              className="text-primary hover:text-primary-container font-bold transition-colors py-1 flex items-center gap-1"
+              className="px-2 py-1 rounded-md text-primary hover:bg-primary/10 transition-colors flex items-center gap-1 whitespace-nowrap"
             >
-              <span className="material-symbols-outlined text-[16px]">play_circle</span>
-              <span>Live Ingestion Demo</span>
+              <span className="material-symbols-outlined text-[15px]">play_circle</span>
+              <span>Live Demo</span>
             </a>
             <a
               href="#campus-flow"
-              className="text-on-surface-variant hover:text-on-surface transition-colors py-1 flex items-center gap-1 font-semibold"
+              className="px-2 py-1 rounded-md text-on-surface hover:bg-surface-container transition-colors flex items-center gap-1 whitespace-nowrap"
             >
-              <span className="material-symbols-outlined text-[16px] text-green-700">hub</span>
-              <span>Campus Closed Loop</span>
+              <span className="material-symbols-outlined text-[15px] text-green-700">hub</span>
+              <span>Campus Flow</span>
             </a>
             <a
               href="#problem"
-              className="text-on-surface-variant hover:text-on-surface transition-colors py-1 flex items-center gap-1"
+              className="px-2 py-1 rounded-md text-on-surface hover:bg-surface-container transition-colors flex items-center gap-1 whitespace-nowrap"
             >
-              <span className="material-symbols-outlined text-[16px] text-red-600">report_problem</span>
-              <span>Ground Problem</span>
+              <span className="material-symbols-outlined text-[15px] text-red-600">report_problem</span>
+              <span>The Problem</span>
             </a>
             <a
               href="#prototype"
-              className="text-on-surface-variant hover:text-on-surface transition-colors py-1 flex items-center gap-1"
+              className="px-2 py-1 rounded-md text-on-surface hover:bg-surface-container transition-colors flex items-center gap-1 whitespace-nowrap"
             >
-              <span className="material-symbols-outlined text-[16px] text-primary">biotech</span>
-              <span>Lab Prototype &amp; Grant</span>
+              <span className="material-symbols-outlined text-[15px] text-primary">biotech</span>
+              <span>Lab Grant</span>
             </a>
             <a
               href="#architecture"
-              className="text-on-surface-variant hover:text-on-surface transition-colors py-1 flex items-center gap-1"
+              className="px-2 py-1 rounded-md text-on-surface hover:bg-surface-container transition-colors flex items-center gap-1 whitespace-nowrap"
             >
-              <span className="material-symbols-outlined text-[16px] text-primary">architecture</span>
+              <span className="material-symbols-outlined text-[15px] text-primary">architecture</span>
               <span>CAD</span>
             </a>
             <a
               href="#how-it-works"
-              className="text-on-surface-variant hover:text-on-surface transition-colors py-1 flex items-center gap-1"
+              className="px-2 py-1 rounded-md text-on-surface hover:bg-surface-container transition-colors flex items-center gap-1 whitespace-nowrap"
             >
-              <span className="material-symbols-outlined text-[16px] text-primary">alt_route</span>
+              <span className="material-symbols-outlined text-[15px] text-primary">alt_route</span>
               <span>Workflow</span>
             </a>
             <a
               href="#calculator"
-              className="text-on-surface-variant hover:text-on-surface transition-colors py-1 flex items-center gap-1"
+              className="px-2 py-1 rounded-md text-on-surface hover:bg-surface-container transition-colors flex items-center gap-1 whitespace-nowrap"
             >
-              <span className="material-symbols-outlined text-[16px] text-primary">calculate</span>
+              <span className="material-symbols-outlined text-[15px] text-primary">calculate</span>
               <span>ROI</span>
             </a>
             <a
               href="#telemetry"
-              className="text-on-surface-variant hover:text-on-surface transition-colors py-1 flex items-center gap-1"
+              className="px-2 py-1 rounded-md text-on-surface hover:bg-surface-container transition-colors flex items-center gap-1 whitespace-nowrap"
             >
-              <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+              <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse shrink-0"></span>
               <span>RTOS</span>
-            </a>
-            <a
-              href="#pedigree"
-              className="text-on-surface-variant hover:text-on-surface transition-colors py-1"
-            >
-              AKGEC Pedigree
             </a>
           </nav>
 
           {/* Trailing Action Buttons */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 shrink-0">
             <button
               onClick={() =>
                 triggerToast("Downloading EcoBin-OS-Hardware-Spec-v4.18.pdf [4.2 MB]")
               }
-              className="hidden md:flex items-center gap-1.5 px-3 py-1.5 text-xs font-mono rounded border border-outline-variant text-on-surface bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer"
+              className="hidden sm:flex items-center gap-1 px-2.5 py-1.5 text-xs font-mono rounded border border-outline-variant text-on-surface bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer whitespace-nowrap"
             >
-              <span className="material-symbols-outlined text-[16px]">description</span>
-              <span>Spec Sheet (PDF)</span>
+              <span className="material-symbols-outlined text-[15px]">description</span>
+              <span>Spec Sheet</span>
             </button>
             <button
               onClick={() => setIsModalOpen(true)}
-              className="px-4 py-2 text-xs font-semibold bg-primary-container text-on-primary hover:bg-primary transition-all rounded shadow-xs flex items-center gap-1.5 active:scale-95 cursor-pointer"
+              className="px-3.5 py-1.5 text-xs font-semibold bg-primary-container text-on-primary hover:bg-primary transition-all rounded shadow-xs flex items-center gap-1 active:scale-95 cursor-pointer whitespace-nowrap"
             >
-              <span className="material-symbols-outlined text-[16px]">tune</span>
-              <span>Book a Pilot</span>
+              <span className="material-symbols-outlined text-[15px]">tune</span>
+              <span>Book Pilot</span>
             </button>
 
-            {/* Quick Terminal Jump Button */}
-            <div className="flex items-center gap-1 border-l border-outline-variant pl-3 ml-1 text-on-surface-variant">
-              <button
-                onClick={() => {
-                  const el = document.getElementById("telemetry");
-                  el?.scrollIntoView({ behavior: "smooth" });
-                }}
-                className="p-1.5 hover:bg-surface-container rounded transition-colors text-on-surface cursor-pointer"
-                title="Scroll to Terminal CLI Stream"
-              >
-                <span className="material-symbols-outlined text-[18px]">terminal</span>
-              </button>
-            </div>
+            {/* Mobile Menu Hamburger Button */}
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="lg:hidden p-1.5 text-on-surface hover:bg-surface-container rounded-lg border border-outline-variant transition-colors cursor-pointer"
+              aria-label="Toggle Navigation Menu"
+            >
+              <span className="material-symbols-outlined text-[20px]">
+                {isMobileMenuOpen ? "close" : "menu"}
+              </span>
+            </button>
           </div>
         </div>
+
+        {/* Mobile Dropdown Menu Drawer */}
+        {isMobileMenuOpen && (
+          <div className="lg:hidden border-t border-outline-variant bg-surface-container-lowest px-6 py-4 shadow-lg">
+            <div className="grid grid-cols-2 gap-2 text-xs font-medium">
+              <a
+                href="#live-pipeline"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="p-2.5 rounded-lg bg-primary-fixed/20 text-primary font-bold flex items-center gap-2"
+              >
+                <span className="material-symbols-outlined text-[16px]">play_circle</span>
+                <span>Live Demo</span>
+              </a>
+              <a
+                href="#campus-flow"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="p-2.5 rounded-lg bg-surface-container flex items-center gap-2 text-on-surface"
+              >
+                <span className="material-symbols-outlined text-[16px] text-green-700">hub</span>
+                <span>Campus Flow</span>
+              </a>
+              <a
+                href="#problem"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="p-2.5 rounded-lg bg-surface-container flex items-center gap-2 text-on-surface"
+              >
+                <span className="material-symbols-outlined text-[16px] text-red-600">report_problem</span>
+                <span>Ground Problem</span>
+              </a>
+              <a
+                href="#prototype"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="p-2.5 rounded-lg bg-surface-container flex items-center gap-2 text-on-surface"
+              >
+                <span className="material-symbols-outlined text-[16px] text-primary">biotech</span>
+                <span>Lab Grant</span>
+              </a>
+              <a
+                href="#architecture"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="p-2.5 rounded-lg bg-surface-container flex items-center gap-2 text-on-surface"
+              >
+                <span className="material-symbols-outlined text-[16px] text-primary">architecture</span>
+                <span>CAD Specs</span>
+              </a>
+              <a
+                href="#how-it-works"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="p-2.5 rounded-lg bg-surface-container flex items-center gap-2 text-on-surface"
+              >
+                <span className="material-symbols-outlined text-[16px] text-primary">alt_route</span>
+                <span>Workflow</span>
+              </a>
+              <a
+                href="#calculator"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="p-2.5 rounded-lg bg-surface-container flex items-center gap-2 text-on-surface"
+              >
+                <span className="material-symbols-outlined text-[16px] text-primary">calculate</span>
+                <span>ROI Calculator</span>
+              </a>
+              <a
+                href="#telemetry"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="p-2.5 rounded-lg bg-surface-container flex items-center gap-2 text-on-surface"
+              >
+                <span className="material-symbols-outlined text-[16px] text-primary">terminal</span>
+                <span>RTOS Terminal</span>
+              </a>
+            </div>
+          </div>
+        )}
       </header>
 
       {/* ================= HERO SECTION ================= */}
@@ -222,35 +286,53 @@ export default function EcoBinLandingPage() {
                 source. Zero odor, fully automated, and compliant with SWM Rules 2016.
               </p>
             </div>
-            <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-2.5 justify-end pt-2">
-              <a
-                href="#live-pipeline"
-                className="w-full py-3 px-5 rounded bg-primary text-white font-bold text-xs hover:bg-primary-container transition-all flex items-center justify-center gap-2 shadow-sm active:scale-[0.99] cursor-pointer ring-2 ring-primary/30"
-              >
-                <span className="material-symbols-outlined text-[18px]">play_circle</span>
-                Live Waste Ingestion &amp; Storage Simulator
-              </a>
-              <button
-                onClick={() => setIsModalOpen(true)}
-                className="w-full py-3 px-5 rounded bg-primary-container text-on-primary font-semibold text-xs hover:bg-primary transition-all flex items-center justify-center gap-2 shadow-xs active:scale-[0.99] cursor-pointer"
-              >
-                <span className="material-symbols-outlined text-[18px]">domain_verification</span>
-                Schedule Society / Campus Audit
-              </button>
-              <a
-                href="#prototype"
-                className="w-full py-3 px-5 rounded bg-primary-fixed/20 border border-primary/40 text-primary font-semibold text-xs hover:bg-primary-fixed/30 transition-all flex items-center justify-center gap-2 cursor-pointer"
-              >
-                <span className="material-symbols-outlined text-[18px]">biotech</span>
-                ₹2.5L Prototype &amp; Hardware Simulator
-              </a>
-              <a
-                href="#problem"
-                className="w-full py-3 px-5 rounded bg-surface-container-lowest border border-outline text-on-surface font-semibold text-xs hover:bg-surface-container transition-all flex items-center justify-center gap-2 cursor-pointer"
-              >
-                <span className="material-symbols-outlined text-[18px] text-red-600">report_problem</span>
-                The 3 Ground Realities &amp; ROI
-              </a>
+            <div className="lg:col-span-4 flex flex-col gap-3 justify-end">
+              {/* Primary Interactive Demo Card */}
+              <div className="p-4 rounded-2xl bg-surface-container-lowest border-2 border-primary/30 shadow-xs flex flex-col gap-2.5">
+                <div className="flex items-center justify-between">
+                  <span className="text-[10px] font-mono text-primary font-bold uppercase tracking-wider flex items-center gap-1.5">
+                    <span className="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+                    Interactive Simulators
+                  </span>
+                  <span className="text-[9px] font-mono px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-bold uppercase">
+                    Live Demo
+                  </span>
+                </div>
+
+                <a
+                  href="#live-pipeline"
+                  className="w-full py-2.5 px-4 rounded-xl bg-primary text-white font-bold text-xs hover:bg-primary-container transition-all flex items-center justify-center gap-2 shadow-xs active:scale-[0.99] cursor-pointer"
+                >
+                  <span className="material-symbols-outlined text-[18px]">play_circle</span>
+                  <span>1. Live Ingestion Simulator</span>
+                </a>
+
+                <a
+                  href="#campus-flow"
+                  className="w-full py-2.5 px-4 rounded-xl bg-primary-fixed/30 border border-primary/40 text-primary font-bold text-xs hover:bg-primary-fixed/50 transition-all flex items-center justify-center gap-2 active:scale-[0.99] cursor-pointer"
+                >
+                  <span className="material-symbols-outlined text-[18px]">hub</span>
+                  <span>2. Campus Closed-Loop Flow</span>
+                </a>
+              </div>
+
+              {/* Secondary Actions Row */}
+              <div className="grid grid-cols-2 gap-2">
+                <button
+                  onClick={() => setIsModalOpen(true)}
+                  className="py-2.5 px-3 rounded-xl bg-surface-container-low border border-outline text-on-surface hover:bg-surface-container font-semibold text-xs transition-all flex items-center justify-center gap-1.5 cursor-pointer"
+                >
+                  <span className="material-symbols-outlined text-[16px] text-primary">domain_verification</span>
+                  <span>Book Audit</span>
+                </button>
+                <a
+                  href="#problem"
+                  className="py-2.5 px-3 rounded-xl bg-surface-container-low border border-outline text-on-surface hover:bg-surface-container font-semibold text-xs transition-all flex items-center justify-center gap-1.5 cursor-pointer"
+                >
+                  <span className="material-symbols-outlined text-[16px] text-red-600">report_problem</span>
+                  <span>3 Realities</span>
+                </a>
+              </div>
             </div>
           </div>
 
