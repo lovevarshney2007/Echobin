@@ -9,6 +9,7 @@ import AkgecPedigreeBanner from "@/components/AkgecPedigreeBanner";
 import ProblemAndMarketMatrix from "@/components/ProblemAndMarketMatrix";
 import PrototypeValidationSuite from "@/components/PrototypeValidationSuite";
 import LiveInteractiveWastePipeline from "@/components/LiveInteractiveWastePipeline";
+import CampusClosedLoopVisualizer from "@/components/CampusClosedLoopVisualizer";
 
 type HardwareProfile = "society" | "family";
 
@@ -94,6 +95,13 @@ export default function EcoBinLandingPage() {
             >
               <span className="material-symbols-outlined text-[16px]">play_circle</span>
               <span>Live Ingestion Demo</span>
+            </a>
+            <a
+              href="#campus-flow"
+              className="text-on-surface-variant hover:text-on-surface transition-colors py-1 flex items-center gap-1 font-semibold"
+            >
+              <span className="material-symbols-outlined text-[16px] text-green-700">hub</span>
+              <span>Campus Closed Loop</span>
             </a>
             <a
               href="#problem"
@@ -326,8 +334,31 @@ export default function EcoBinLandingPage() {
         </div>
       </section>
 
+      {/* ================= SECTION: CAMPUS CLOSED-LOOP ARCHITECTURE & ACTUAL PRODUCT ================= */}
+      <section className="py-20 bg-surface-container-low border-b border-outline-variant" id="campus-flow">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-green-500/10 border border-green-600/30 text-xs font-mono text-green-700 font-bold tracking-widest uppercase mb-3">
+              <span className="w-2 h-2 rounded-full bg-green-600 animate-pulse"></span>
+              INSTITUTIONAL CLOSED-LOOP INFRASTRUCTURE
+            </div>
+            <h2 className="text-3xl lg:text-4xl font-extrabold text-on-surface tracking-tight mb-3">
+              Campus &amp; Society Closed-Loop Pipe Network
+            </h2>
+            <p className="text-sm text-on-surface-variant leading-relaxed">
+              Explore the entire end-to-end journey from the <strong>EcoBin Smart Segregation Node</strong> (our sleek green-lid physical appliance)
+              to the underground <strong>Dual Conduit Pipe System</strong>, the <strong>Centralized Dome Bioreactor</strong>, and direct on-site
+              utilization in the <strong>Canteen Cooking Mess</strong> and campus gardens.
+            </p>
+          </div>
+
+          {/* Interactive Campus Flow & Physical Machine Visualizer */}
+          <CampusClosedLoopVisualizer />
+        </div>
+      </section>
+
       {/* ================= SECTION: GROUND-LEVEL PROBLEM & MARKET MATRIX ================= */}
-      <section className="py-20 bg-surface-container-low border-b border-outline-variant" id="problem">
+      <section className="py-20 bg-surface-container-lowest border-b border-outline-variant" id="problem">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <ProblemAndMarketMatrix />
         </div>
