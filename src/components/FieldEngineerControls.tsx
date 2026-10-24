@@ -269,7 +269,7 @@ export default function FieldEngineerControls() {
               FIELD ENGINEER TELEMETRY &amp; RTOS OVERRIDES
             </span>
             <span className="text-[10px] px-2 py-0.5 rounded bg-white/10 text-white/80 border border-white/10">
-              SYS_REV: v4.18-AKGEC
+              SYS_REV: v4.18-CORE
             </span>
           </div>
           <h3 className="text-xl font-extrabold text-white">
@@ -470,7 +470,7 @@ export default function FieldEngineerControls() {
           {/* Pedigree Stamp Footer */}
           <div className="pt-4 border-t border-white/10 text-[11px] text-white/60 flex items-center justify-between">
             <span>LAB BENCH VALIDATED</span>
-            <span className="text-primary font-bold">AKGEC LABS GHZ</span>
+            <span className="text-primary font-bold">FIELD BENCH v4.2</span>
           </div>
         </div>
 

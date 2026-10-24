@@ -5,7 +5,7 @@ import InteractiveMachineSchematic from "@/components/InteractiveMachineSchemati
 import OperationalWorkflowStepper from "@/components/OperationalWorkflowStepper";
 import BiogasEnergyCalculator from "@/components/BiogasEnergyCalculator";
 import FieldEngineerControls from "@/components/FieldEngineerControls";
-import AkgecPedigreeBanner from "@/components/AkgecPedigreeBanner";
+import InstitutionalPedigreeBanner from "@/components/InstitutionalPedigreeBanner";
 import ProblemAndMarketMatrix from "@/components/ProblemAndMarketMatrix";
 import PrototypeValidationSuite from "@/components/PrototypeValidationSuite";
 import LiveInteractiveWastePipeline from "@/components/LiveInteractiveWastePipeline";
@@ -268,7 +268,7 @@ export default function EcoBinLandingPage() {
             </div>
             <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded bg-primary-fixed/30 text-xs font-mono text-primary border border-primary/20">
               <span className="material-symbols-outlined text-[14px]">school</span>
-              AKGEC LABS INCUBATED
+              CAMPUS LIVING LAB VALIDATED
             </div>
           </div>
 
@@ -667,10 +667,10 @@ export default function EcoBinLandingPage() {
         </div>
       </section>
 
-      {/* ================= SECTION 6: AKGEC LABS PEDIGREE & FEASIBILITY ================= */}
+      {/* ================= SECTION 6: INSTITUTIONAL R&D PEDIGREE & FEASIBILITY ================= */}
       <section className="py-20 bg-surface-container-low border-b border-outline-variant" id="pedigree">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <AkgecPedigreeBanner />
+          <InstitutionalPedigreeBanner />
 
           {/* Quick Site Feasibility Form Card */}
           <div className="mt-12 bg-surface-container-lowest p-8 rounded-xl border border-outline-variant shadow-xs">
@@ -810,15 +810,15 @@ export default function EcoBinLandingPage() {
                 RTOS Telemetry
               </a>
               <a href="#pedigree" className="hover:text-primary transition-colors">
-                AKGEC Labs
+                R&amp;D Validation
               </a>
             </div>
           </div>
 
           <div className="pt-6 border-t border-outline-variant flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] font-mono text-secondary">
             <div>
-              © 2026 EcoBin Telemetry &amp; Climate Hardware Systems. Developed under AKGEC Labs
-              Institutional Pedigree. SWM 2016 &amp; ULB Compliant.
+              © 2026 EcoBin Telemetry &amp; Climate Hardware Systems. Developed under Institutional R&amp;D
+              &amp; Campus Testbed Pedigree. SWM 2016 &amp; ULB Compliant.
             </div>
             <div className="flex items-center gap-3">
               <span className="inline-block w-2 h-2 rounded-full bg-primary"></span>

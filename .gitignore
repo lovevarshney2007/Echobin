@@ -23,6 +23,7 @@
 # misc
 .DS_Store
 *.pem
+slide_renders/
 
 # debug
 npm-debug.log*

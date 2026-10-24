@@ -196,7 +196,7 @@ export default function ProblemAndMarketMatrix() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             <div className="lg:col-span-7 space-y-4">
               <div className="inline-flex items-center gap-2 px-2.5 py-0.5 rounded bg-primary-fixed/30 text-primary font-mono text-xs font-bold uppercase border border-primary/20">
-                Primary Beachhead: AKGEC Campus Testbed
+                Primary Beachhead: University Campuses &amp; Hostels
               </div>
               <h4 className="text-xl font-bold text-on-surface">
                 University Hostels &amp; Institutional Dining Halls

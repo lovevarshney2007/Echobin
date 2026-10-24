@@ -75,7 +75,7 @@ export default function BiogasEnergyCalculator({
               BIOMASS-TO-ENERGY SIMULATION ENGINE
             </span>
             <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-bold">
-              AKGEC CALIBRATED
+              EMPIRICALLY CALIBRATED
             </span>
           </div>
           <h3 className="text-2xl font-extrabold text-on-surface">

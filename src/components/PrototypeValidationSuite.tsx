@@ -255,7 +255,7 @@ export default function PrototypeValidationSuite() {
           </h3>
           <p className="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
             Transparent, audited capital allocation for physical hardware fabrication, sensor fusion testing,
-            and 20L laboratory anaerobic digester kinetics at the AKGEC campus labs.
+            and 20L laboratory anaerobic digester kinetics across academic and institutional living labs.
           </p>
         </div>
 
@@ -307,7 +307,7 @@ export default function PrototypeValidationSuite() {
               <span className="text-primary font-bold block mb-1">PHASE 1 (M 0–3)</span>
               <strong className="text-on-surface block mb-1 font-sans">Lab Benchtop Validation</strong>
               <p className="text-[11px] text-on-surface-variant font-sans">
-                Camera + moisture/metal sensor fusion logic tested on mixed canteen trash at AKGEC lab.
+                Camera + moisture/metal sensor fusion logic tested on mixed canteen trash in pilot bench trials.
               </p>
             </div>
             <div className="p-3.5 rounded-lg bg-surface-container-lowest border border-outline-variant">
@@ -319,9 +319,9 @@ export default function PrototypeValidationSuite() {
             </div>
             <div className="p-3.5 rounded-lg bg-surface-container-lowest border border-outline-variant">
               <span className="text-primary font-bold block mb-1">PHASE 3 (M 6–12)</span>
-              <strong className="text-on-surface block mb-1 font-sans">AKGEC Hostel Pilot</strong>
+              <strong className="text-on-surface block mb-1 font-sans">Campus Hostel Pilot</strong>
               <p className="text-[11px] text-on-surface-variant font-sans">
-                Prototype deployed at AKGEC hostel canteen processing real-world 150–250 kg daily waste.
+                Prototype deployed at university hostel canteen processing real-world 150–250 kg daily waste.
               </p>
             </div>
             <div className="p-3.5 rounded-lg bg-surface-container-lowest border border-outline-variant">
