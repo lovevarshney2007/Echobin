@@ -1020,7 +1020,7 @@ export default function InteractiveMachineSchematic({ profile }: Props) {
                       </div>
                       <div className="p-2 bg-surface-container rounded border border-outline-variant">
                         <span className="block text-on-surface-variant text-[10px]">Sorting Accuracy</span>
-                        <span className="font-bold text-primary">&gt; 94.6% Tested</span>
+                        <span className="font-bold text-primary">&gt; 94% Target Acc.</span>
                       </div>
                     </div>
                   </div>

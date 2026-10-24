@@ -266,10 +266,6 @@ export default function EcoBinLandingPage() {
               <span className="material-symbols-outlined text-[14px]">verified</span>
               SWM 2016 COMPLIANT
             </div>
-            <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded bg-primary-fixed/30 text-xs font-mono text-primary border border-primary/20">
-              <span className="material-symbols-outlined text-[14px]">school</span>
-              CAMPUS LIVING LAB VALIDATED
-            </div>
           </div>
 
           {/* Main Headline & Subhead */}
@@ -810,15 +806,14 @@ export default function EcoBinLandingPage() {
                 RTOS Telemetry
               </a>
               <a href="#pedigree" className="hover:text-primary transition-colors">
-                R&amp;D Validation
+                R&amp;D Roadmap
               </a>
             </div>
           </div>
 
           <div className="pt-6 border-t border-outline-variant flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] font-mono text-secondary">
             <div>
-              © 2026 EcoBin Telemetry &amp; Climate Hardware Systems. Developed under Institutional R&amp;D
-              &amp; Campus Testbed Pedigree. SWM 2016 &amp; ULB Compliant.
+              © 2026 EcoBin Telemetry &amp; Climate Hardware Systems. Designed for SWM 2016 &amp; ULB Compliance.
             </div>
             <div className="flex items-center gap-3">
               <span className="inline-block w-2 h-2 rounded-full bg-primary"></span>

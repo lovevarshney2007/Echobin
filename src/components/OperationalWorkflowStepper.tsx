@@ -24,7 +24,7 @@ interface StepData {
   };
   chemistryPrinciple: string;
   reactionEquation?: string;
-  labValidation: string;
+  engineeringSpec: string;
   keySensors: string[];
   swrComplianceNote: string;
 }
@@ -52,8 +52,8 @@ const WORKFLOW_STEPS: StepData[] = [
     chemistryPrinciple:
       "Dielectric permittivity differential (dry packaging ε_r ≈ 2-3 vs. wet organic scraps ε_r ≈ 50-80) enables instant differentiation even on dirty or food-stained plastics.",
     reactionEquation: "Dielectric Response: C_sensor = ε_r · ε_0 · (A / d)  [ε_r(food) >> ε_r(plastic)]",
-    labValidation:
-      "Benchtop test rig proved real-time sorting accuracy >94.6% on mixed institutional canteen trays in pilot pre-incubation trials (PPT Slide 4 & 7).",
+    engineeringSpec:
+      "Engineered for real-time sorting targeting >94% precision across mixed institutional canteen trays and packaging.",
     keySensors: [
       "Sony IMX Optical Vision (YOLOv8 INT8)",
       "Capacitive Moisture Dielectric Probe",
@@ -85,8 +85,8 @@ const WORKFLOW_STEPS: StepData[] = [
     chemistryPrinciple:
       "Decreasing particle size from 20mm to <2mm increases exposed specific surface area by ~10×, accelerating biological hydrolysis kinetics and preventing anaerobic digester clogging.",
     reactionEquation: "Hydrolysis: (C6H10O5)_n + n H2O  →  n C6H12O6 (Monosaccharides)",
-    labValidation:
-      "Laboratory testing of high-torque shearing confirmed micro-slurry reduction <2 mm with 0% fiber entanglement on banana peels and fibrous greens (PPT Slide 7).",
+    engineeringSpec:
+      "High-torque shearing design configured for micro-slurry reduction <2 mm without fiber entanglement on banana peels and fibrous greens.",
     keySensors: [
       "Motor Hall Effect RPM Encoder (1,420 RPM)",
       "Current Shunt Overload Sensor (Cutoff @ 5.2A)",
@@ -118,8 +118,8 @@ const WORKFLOW_STEPS: StepData[] = [
     chemistryPrinciple:
       "Four distinct biochemical stages: Hydrolysis breaks polymers into monomers; Acidogenesis forms volatile fatty acids; Acetogenesis produces acetic acid & H2; Methanogenesis converts acetate into methane gas (CH4). Continuous pH buffering at 7.14 with NaHCO3 prevents acid souring.",
     reactionEquation: "Methanogenesis: CH3COOH  →  CH4 (65%) + CO2 (35%)  [ΔG° = -31 kJ/mol]",
-    labValidation:
-      "Lab-scale 20L testing proved kinetic stabilization at 37.2°C and validated automated buffer calibration preventing volatile acid shock (PPT Slide 8 Phase 2).",
+    engineeringSpec:
+      "Mesophilic digestion design stabilized at 37.2°C with automated buffer calibration to prevent volatile acid shock.",
     keySensors: [
       "Submersible Industrial Glass pH Electrode (7.14 ± 0.05)",
       "PT100 RTD Core Thermocouple (37.2°C ± 0.1°C)",
@@ -151,8 +151,8 @@ const WORKFLOW_STEPS: StepData[] = [
     chemistryPrinciple:
       "Granular ferric oxide selectively chemisorbs H2S gas via exothermic reaction, producing stable iron sulfide and water. Activated carbon then polishes remaining trace odorants.",
     reactionEquation: "H2S Scrubber: Fe2O3·H2O + 3 H2S  →  Fe2S3·H2O + 3 H2O  (Odorless & Non-Corrosive)",
-    labValidation:
-      "Continuous activated carbon scrubber validation confirmed 0 ppm odor breakthrough and verified fail-closed solenoid sealing within 80ms if methane exceeds 0.5% (PPT Slide 4).",
+    engineeringSpec:
+      "Continuous activated carbon scrubber with fail-closed solenoid sealing within 80ms if methane exceeds 0.5% threshold.",
     keySensors: [
       "Electrochemical H2S Gas Sensor (< 2 ppm)",
       "Solid-State Ambient CH4 Leak Detector (0.5% cutoff)",
@@ -184,8 +184,8 @@ const WORKFLOW_STEPS: StepData[] = [
     chemistryPrinciple:
       "Purified biogas contains ~65% CH4 and 35% CO2 with a high calorific value of ~21.5 MJ/m³. Digestate contains nitrogen in ammoniacal form (NH4+), readily assimilable by plant roots without synthetic chemicals.",
     reactionEquation: "Combustion: CH4 + 2 O2  →  CO2 + 2 H2O + 890 kJ/mol  (Clean Blue Flame)",
-    labValidation:
-      "Prototype trial pilot at institutional hostel canteen validated bulk food waste conversion into cooking fuel for student meals and high-purity fertilizer for campus grounds (PPT Slide 8).",
+    engineeringSpec:
+      "Planned institutional pilot targets bulk dining food waste conversion into cooking fuel for student meals and high-purity fertilizer.",
     keySensors: [
       "Thermal Mass Flow Meter (Biogas m³/day)",
       "Liquid Effluent Totalizer (Liters/day)",
@@ -365,14 +365,14 @@ export default function OperationalWorkflowStepper({
               )}
             </div>
 
-            {/* Engineering Labs Bench Validation Note */}
+            {/* Engineering Design & Target Specs */}
             <div className="p-4 rounded-lg bg-primary-fixed/15 border border-primary/25">
               <div className="flex items-center gap-2 text-primary font-mono text-xs font-bold uppercase mb-1">
-                <span className="material-symbols-outlined text-[16px]">school</span>
-                Engineering Bench &amp; Pilot Validation
+                <span className="material-symbols-outlined text-[16px]">engineering</span>
+                Engineering Design &amp; Target Specifications
               </div>
               <p className="text-xs text-on-surface-variant leading-relaxed">
-                {currentStep.labValidation}
+                {currentStep.engineeringSpec}
               </p>
             </div>
 

@@ -12,10 +12,10 @@ export default function InstitutionalPedigreeBanner() {
         <div className="lg:col-span-5 space-y-4">
           <div className="flex items-center gap-2 text-primary font-mono text-xs uppercase font-bold">
             <span className="material-symbols-outlined text-[18px]">school</span>
-            <span>ACADEMIC INCUBATION &amp; VALIDATION</span>
+            <span>ACADEMIC INCUBATION &amp; R&amp;D INITIATIVE</span>
           </div>
           <h3 className="text-2xl font-extrabold text-on-surface">
-            Engineered Across Enterprise &amp; Campus Living Labs
+            Engineered for Scalable Campus &amp; Urban Bio-Utilities
           </h3>
           <p className="text-xs text-on-surface-variant leading-relaxed">
             Founded by <strong>Akshi Rani</strong> (B.Tech AIML, 3rd Year), EcoBin bridges embedded edge computer vision with
@@ -25,14 +25,14 @@ export default function InstitutionalPedigreeBanner() {
 
           <div className="p-3.5 rounded-lg bg-surface-container-lowest border border-outline-variant">
             <span className="text-[10px] font-mono text-primary font-bold uppercase block mb-1">
-              PRE-INCUBATION VALIDATION GRANT ASK
+              PRE-INCUBATION PROTOTYPING GRANT ASK
             </span>
             <div className="flex items-baseline gap-2">
               <span className="text-2xl font-extrabold font-mono text-on-surface">₹2.5 Lakhs</span>
-              <span className="text-xs font-mono text-on-surface-variant">Prototype &amp; Bench Testing</span>
+              <span className="text-xs font-mono text-on-surface-variant">Prototype &amp; Pilot Development</span>
             </div>
             <p className="text-[11px] text-on-surface-variant mt-1">
-              Granted for multi-sensor segregation validation, 20L kinetic pilot, and institutional campus canteen trials.
+              Proposed funding for sensor fusion test rig, 20L kinetic pilot, and institutional dining hall trials.
             </p>
           </div>
 
@@ -91,11 +91,11 @@ export default function InstitutionalPedigreeBanner() {
               <div className="space-y-3 font-mono text-xs">
                 <div className="p-3 rounded-lg bg-surface-container border border-outline-variant">
                   <div className="flex items-center justify-between text-primary font-bold mb-1">
-                    <span>PHASE 1: BENCHTOP VALIDATION</span>
+                    <span>PHASE 1: BENCHTOP PROTOTYPING</span>
                     <span>MONTHS 0 – 3</span>
                   </div>
                   <p className="text-on-surface-variant text-[11px] font-sans">
-                    Camera &amp; multi-sensor segregation logic tested on mixed waste in engineering testbeds. Proves real-time plastic vs. organic food separation.
+                    Camera &amp; multi-sensor segregation logic implemented for real-time plastic vs. organic food separation.
                   </p>
                 </div>
 
@@ -111,11 +111,11 @@ export default function InstitutionalPedigreeBanner() {
 
                 <div className="p-3 rounded-lg bg-surface-container border border-outline-variant">
                   <div className="flex items-center justify-between text-primary font-bold mb-1">
-                    <span>PHASE 3: INSTITUTIONAL HOSTEL CANTEEN PILOT</span>
+                    <span>PHASE 3: INSTITUTIONAL PILOT TESTBED</span>
                     <span>MONTHS 6 – 12</span>
                   </div>
                   <p className="text-on-surface-variant text-[11px] font-sans">
-                    Prototype deployment with real-world bulk dining scraps; cooking gas piped into student mess kitchen.
+                    Planned prototype deployment with bulk dining scraps; cooking gas piped into student mess kitchen.
                   </p>
                 </div>
 
@@ -197,7 +197,7 @@ export default function InstitutionalPedigreeBanner() {
           </div>
 
           <div className="mt-4 pt-3 border-t border-outline-variant text-[11px] font-mono text-on-surface-variant flex items-center justify-between">
-            <span>DEPLOYMENT: REGIONAL LIVING LABS</span>
+            <span>DEVELOPMENT: PRE-INCUBATION R&amp;D</span>
             <span className="text-primary font-bold">B.TECH AIML 3RD YEAR</span>
           </div>
         </div>

@@ -469,7 +469,7 @@ export default function FieldEngineerControls() {
 
           {/* Pedigree Stamp Footer */}
           <div className="pt-4 border-t border-white/10 text-[11px] text-white/60 flex items-center justify-between">
-            <span>LAB BENCH VALIDATED</span>
+            <span>SYSTEM ARCHITECTURE SPEC</span>
             <span className="text-primary font-bold">FIELD BENCH v4.2</span>
           </div>
         </div>

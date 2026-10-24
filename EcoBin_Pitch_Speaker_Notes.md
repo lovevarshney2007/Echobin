@@ -12,7 +12,7 @@
 **Target Duration:** 25 Seconds
 
 ### Spoken Pitch:
-> "Good morning, everyone. We are presenting EcoBin, a decentralized climate tech and urban bio-utility platform engineered across our institutional R&D testbeds.
+> "Good morning, everyone. We are presenting EcoBin, a decentralized climate tech and urban bio-utility platform engineered for autonomous waste-to-energy transformation.
 > 
 > Today, bulk waste generators—including higher-education university hostels, commercial dining halls, and gated residential townships—view garbage as a costly, foul-smelling, and heavily penalized operational headache. 
 > 
@@ -59,7 +59,7 @@
 ### Spoken Pitch:
 > "EcoBin deploys autonomous edge-AI source-segregation coupled with closed-loop anaerobic biodigestion, converting daily food waste directly into free cooking fuel and pristine recyclables right on campus.
 > 
-> Our immediate beachhead is university campuses and student hostels—validated on our active operational campus testbed. With 1,000 to 3,000 students generating 150 to 400 kg of daily plate waste, the Campus Director is a single decision-maker focused on eliminating ₹45,000 monthly hauling bills and earning NAAC A++ Green Campus credentials.
+> Our immediate beachhead is university campuses and student hostels—tailored directly for institutional dining halls. With 1,000 to 3,000 students generating 150 to 400 kg of daily plate waste, the Campus Director is a single decision-maker focused on eliminating ₹45,000 monthly hauling bills and earning NAAC A++ Green Campus credentials.
 > 
 > Our scaled market expands to gated residential societies (RWAs), where 200 to 1,200 apartments spend dedicated maintenance funds to avoid ₹50,000 municipal fines and eliminate foul dumpster bays.
 > 
@@ -91,7 +91,7 @@
 > 
 > Our Serviceable Available Market focuses on 25,000 high-density gated societies and accredited university campuses across India’s top eight Tier-1 urban clusters—a ₹3,200 Crore opportunity. Our initial 3-year SOM targets 300 campus deployments and 500 premium gated societies in Delhi-NCR and Bengaluru, generating ₹95 Crores in high-margin revenue.
 > 
-> Our execution roadmap starts with our operational campus living lab testbed, expands directly across higher-ed private universities via institutional B2B sales, partners with facility management leaders like JLL and CBRE, and scales by aggregating clean recyclable bales for industrial offtake."
+> Our execution roadmap begins with initial university campus pilots, expanding directly across higher-ed private universities via institutional B2B sales, partnering with facility management leaders like JLL and CBRE, and scaling by aggregating clean recyclable bales for industrial offtake."
 
 **Transition Bridge:** *"Let's examine the compelling unit economics that make this model so financially sustainable."*
 
@@ -104,7 +104,7 @@
 ### Spoken Pitch:
 > "EcoBin generates cash through three distinct, defensible revenue engines: first, hardware CapEx sales of our EcoBin Society hubs at 38% to 42% gross margins; second, recurring monthly AMC retainers of ₹5,000 to ₹10,000 per installation at 65% gross margins; and third, shared monetization from selling pre-segregated, clean dry recyclable bales to industrial partners.
 > 
-> Look at the representative unit economics for a 250 kg/day campus testbed: the campus saves ₹45,000 in avoided hauling, replaces 28 commercial LPG cylinders saving ₹56,000, and gains ₹6,500 in fertilizer value—generating ₹1,07,500 in gross monthly value. Even after paying our ₹7,500 monthly AMC retainer, the campus pockets ₹1,00,000 in net monthly cash benefit, or ₹12 Lakhs every single year.
+> Look at the representative unit economics for a 250 kg/day campus deployment: the campus saves ₹45,000 in avoided hauling, replaces 28 commercial LPG cylinders saving ₹56,000, and gains ₹6,500 in fertilizer value—generating ₹1,07,500 in gross monthly value. Even after paying our ₹7,500 monthly AMC retainer, the campus pockets ₹1,00,000 in net monthly cash benefit, or ₹12 Lakhs every single year.
 > 
 > Full capital payback is achieved in just 16 to 20 months. Because our digester powers the daily kitchen stove, customer churn is near-zero, creating an extraordinary biological and telemetric moat."
 

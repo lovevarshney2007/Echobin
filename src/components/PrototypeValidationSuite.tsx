@@ -137,7 +137,7 @@ export default function PrototypeValidationSuite() {
           <div className="flex items-center gap-2 mb-2">
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
             <span className="text-xs font-mono text-primary font-bold uppercase tracking-wider">
-              HARDWARE &amp; LOGIC VALIDATION
+              HARDWARE &amp; SENSOR LOGIC SPEC
             </span>
           </div>
           <h3 className="text-2xl sm:text-3xl font-extrabold text-on-surface tracking-tight mb-2">
@@ -247,15 +247,15 @@ export default function PrototypeValidationSuite() {
           <div className="flex items-center gap-2 mb-2">
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
             <span className="text-xs font-mono text-primary font-bold uppercase tracking-wider">
-              PRE-INCUBATION VALIDATION GRANT
+              PRE-INCUBATION PROTOTYPING GRANT
             </span>
           </div>
           <h3 className="text-2xl sm:text-3xl font-extrabold text-on-surface tracking-tight mb-2">
-            Prototype Build &amp; Bench Validation Budget: ₹2.5 Lakhs
+            Prototype Build &amp; Pilot Testing Budget: ₹2.5 Lakhs
           </h3>
           <p className="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
-            Transparent, audited capital allocation for physical hardware fabrication, sensor fusion testing,
-            and 20L laboratory anaerobic digester kinetics across academic and institutional living labs.
+            Transparent capital allocation proposed for physical hardware fabrication, sensor fusion prototyping,
+            and 20L laboratory anaerobic digester testing.
           </p>
         </div>
 
@@ -305,9 +305,9 @@ export default function PrototypeValidationSuite() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4 font-mono text-xs">
             <div className="p-3.5 rounded-lg bg-surface-container-lowest border border-outline-variant">
               <span className="text-primary font-bold block mb-1">PHASE 1 (M 0–3)</span>
-              <strong className="text-on-surface block mb-1 font-sans">Lab Benchtop Validation</strong>
+              <strong className="text-on-surface block mb-1 font-sans">Lab Benchtop Prototyping</strong>
               <p className="text-[11px] text-on-surface-variant font-sans">
-                Camera + moisture/metal sensor fusion logic tested on mixed canteen trash in pilot bench trials.
+                Camera + moisture/metal sensor fusion logic built for mixed dining waste streams.
               </p>
             </div>
             <div className="p-3.5 rounded-lg bg-surface-container-lowest border border-outline-variant">
@@ -319,9 +319,9 @@ export default function PrototypeValidationSuite() {
             </div>
             <div className="p-3.5 rounded-lg bg-surface-container-lowest border border-outline-variant">
               <span className="text-primary font-bold block mb-1">PHASE 3 (M 6–12)</span>
-              <strong className="text-on-surface block mb-1 font-sans">Campus Hostel Pilot</strong>
+              <strong className="text-on-surface block mb-1 font-sans">Planned Campus Pilot</strong>
               <p className="text-[11px] text-on-surface-variant font-sans">
-                Prototype deployed at university hostel canteen processing real-world 150–250 kg daily waste.
+                Prototype field deployment at campus hostel canteen targeting 150–250 kg daily waste.
               </p>
             </div>
             <div className="p-3.5 rounded-lg bg-surface-container-lowest border border-outline-variant">
